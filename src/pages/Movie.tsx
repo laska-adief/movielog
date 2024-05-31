@@ -51,7 +51,7 @@ const Movie = () => {
         <div className="w-full text-center py-4">
           <button
             type="button"
-            className="py-2 px-4 bg-blue-500 outline-none border-none rounded-lg text-white font-medium"
+            className="py-2 px-4 bg-blue-500 outline-none border-none rounded-lg text-white font-medium hover:bg-blue-700 transition-all"
             onClick={handleLoadMore}>
             Load More
           </button>
