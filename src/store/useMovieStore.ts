@@ -11,7 +11,7 @@ interface MovieStoreProps {
 }
 
 const useMovieStore = create<MovieStoreProps>((set) => ({
-  page: 0,
+  page: 1,
   movies: [],
   total_pages: 0,
   setPage: (page: number) => set({ page }),
