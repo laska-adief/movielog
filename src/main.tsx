@@ -6,6 +6,7 @@ import Movie from "./pages/Movie.tsx";
 import WatchList from "./pages/WatchList.tsx";
 import App from "./App.tsx";
 import { QueryClient, QueryClientProvider } from "react-query";
+import DetailMovie from "./pages/DetailMovie.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "watchlist",
         element: <WatchList />,
+      },
+      {
+        path: "movie/:id",
+        element: <DetailMovie />,
       },
       {
         path: "*",
